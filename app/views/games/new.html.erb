@@ -1,0 +1,60 @@
+<h1>New game</h1>
+
+
+<!-- <h1> <%= @letters %> </h1> -->
+
+<ul class="list" >
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[0].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[1].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[2].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[3].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[4].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[5].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[6].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[7].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[8].capitalize %></li>
+  </div>
+
+  <div style="display: inline-block" class="fond">
+  <li><%= @letters[9].capitalize %></li>
+  </div>
+
+</ul>
+
+<form action="/score" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<input type="text" name="longest_word" placeholder="Whats is the longest word you can find">
+<input type="submit" placeholder="Play">
+</form>
+
+
+
+
+
+
